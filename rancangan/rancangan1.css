@@ -36,7 +36,7 @@
   font-style: italic;
 }
 .navbar .navbar-logo span {
-  color: #8b0000;
+  color: #008000;
 }
 .navbar .navbar-nav a {
   color: black;
@@ -59,16 +59,19 @@
 .navbar .navbar-nav a:hover::after{
   transform: scaleX(0.5);
 }
+
 .hero {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background-image: url(img\soto2.jpeg);
+  /* align-item untuk vertikal */
+  background-image: url(../foto/soto5.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   position: relative;
 }
+
 .hero::after{
   content: "";
   display: block;
@@ -88,5 +91,67 @@
 }
 .hero .content h1{
   font-size: 3rem;
-  color: ;
+  color:#000;
+  text-shadow: 1px 1px 3px rgba(225, 225, 225, 0.5);
+  line-height: 1.2;
+}
+.hero .content h1 span{
+  color: #008000;
+}
+.hero .content p{
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  line-height: 1.4;
+  font-weight: 300;
+  /* text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.5); */
+  /* mix-blend-mode: difference; */
+}
+.hero .content .cta {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  color: black;
+  font-size: 1.3rem;
+  background-color: #008000;
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+}
+.menu {
+  padding: 8rem 7% 1.4rem;
+}
+.menu p {
+  text-align:  center;
+  max-width: 30rem;
+  margin: auto;
+  font-size: 1rem;
+  font-weight: 100;
+  line-height: 1.5;
+}
+.menu h2{
+  text-align: center;
+  font-size: 2.6rem;
+  margin-bottom: 1rem;
+}
+.menu h2 span{
+  color: #008000;
+}
+.menu .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+  justify-content: center;
+}
+.menu .row .menu-card {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.gambar {
+  width: 21rem;
+}
+.menu .row .menu-card img {
+  border-radius: 60%;
+  width: 80%;
+}
+.menu .row .menu-card .menu-card-title {
+  margin: 1.5rem auto 0.5rem;
 }
